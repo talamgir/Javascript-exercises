@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title></title>
+	</head>
+	<body>
+	<script>
+		// assume input is always 1 character long string
+		// no need for error checking on;
+		// - longer strings
+		// -different types
+		function vowelSimple(s){
+			if (s==="a")
+				return true;
+			else if (s==="e")
+				return true;
+			else if (s==="i")
+				return true;
+			else if (s==="o")
+				return true;
+			else if (s==="u")
+				return true;
+			else 
+				return false;
+		
+		}
+
+		function vowel(s){
+			var vowels = ["a","e","i","o","u"];
+			console.log(s, vowels);
+
+			for (var i=0; i<vowels.length; i++){
+				console.log("current vowel:",vowels[i]);
+
+				if(s===vowels[i])
+					return true;
+			}
+			// didn't return true for any of the vowels we checked, so let's return false outside of the for loop 	
+				return false;
+		}
+		
+		//"I AM A STATEMENT".toLowerCase()
+
+		//function vowel(s){
+		//	var first = ["a","e","i","o","u"];
+		//	if (s===first){
+		//		console.log("i'm in your if");			
+		//	}
+		//}
+		
+		//vowel(b); // false
+		//vowel("s"); // false
+		//vowel("a"); // true
+		//vowel ("e"); // true
+		//vowel ("i"); // true
+		//vowel ("o"); // true
+		//vowel ("u"); // true
+		//vowel ("y"); // false
+		//vowel ("?"); // false
+	</script>
+</body>
+</html>

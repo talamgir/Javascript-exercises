@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title></title>
+	</head>
+	<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+		 var x="sunshine"
+		 function palindrome(x){
+		 	if(x === x.split('').reverse().join('')) {
+		 	return true;
+		 	}
+		 	else {
+		 	return false;
+		 	}
+		 }
+		// this is a function for a palindrome
+    	function Palindrome() {
+        // this defines a variable for the reverse of an empty string
+        var revStr = "";
+        // this is a prompt to enter a string
+        var str= prompt("Enter a string or number:")
+        // this checks the length of a string
+        var i = str.length;
+        // **What the hell does this mean????**-it checks the length of the string entered?
+        for(var novel=i; novel>=0; novel--) {
+            revStr = revStr+str.charAt(novel);
+        }
+        // if string is the same forwards and backwards, it's a palindrome!
+        if(str == revStr) {
+            alert(str+" is a palindrome");
+        // if not, it's not a palindrome
+        } else {
+            alert(str+" is not a palindrome");
+        }
+    }
+    // tells the function to go or start
+    Palindrome()
+</script>
+	</script>
+	</body>
+</html>
